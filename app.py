@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-from os import environ as env
 from sys import argv
 
 import bottle
@@ -36,7 +35,6 @@ def images(filename):
 @route('/audio/<filename:re:.*\.mp3>')
 def audio(filename):
     return static_file(filename, root='static/audio')
-
 
 
 if DEBUG:
