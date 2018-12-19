@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http -equiv="X -UA -Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Hilla">
+    <title>Memory Game</title>
+
+    <!--My CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+    <!--JQUERY SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- My JS -->
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-element">
+            <span> Choose subject: </span>
+            <select id="subject">
+                <option value="world">World</option>
+                <option value="rap">Rap</option>
+                <option value="flowers">Flowers</option>
+            </select>
+        </div>
+        <div class="header-element">
+            <span> Choose level: </span>
+            <select id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <button class="new-game-button header-element">New Game</button>
+    </div>
+    <div class="board-wrap">
+    </div>
+    <div id="modal-container">
+        <div id="modal-content">
+            You Won!<br>
+            <div class="moves">Number of moves: <span class="trials-counter"></span></div>
+            <button class="play-again-button"> Play Again </button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
